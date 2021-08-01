@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cash Register</h1>
+        <div class="info">
+        <p>Enter the bill amount and cash paid by the customer to get the minimum number of notes of available denominations to be returned back.</p>
+        <!-- <p>Available Denominations are of ₹1,₹5,₹10,₹20,₹100,₹500,₹2000</p> -->
+    </div>
+        <div class="bill">
+            <p class='text'>Enter the Bill Amount: </p>
+            <input type="number" placeholder="In ₹" id="bill-amt">
+            <button class="btn-next btn-design">Next</button>
+        </div>
+        <div class="paid">
+            <p class="text">Enter the Paid Amount: </p>
+            <input type="number" placeholder="In ₹" id="paid-amt">
+            <br>
+            <button class="btn-check btn-design">Check</button>
+            <button class="btn-reset btn-design">Reset</button> 
+        </div>
+        
+        <div class="result-msg"></div>   
+    </div>
+    
+
+    <table class="result-table">
+        <tr>
+            <th>No.of Notes</th>
+            <td class="no-of-notes">0</td>
+            <td class="no-of-notes">0</td>
+            <td class="no-of-notes">0</td>
+            <td class="no-of-notes">0</td>
+            <td class="no-of-notes">0</td>
+            <td class="no-of-notes">0</td>
+            <td class="no-of-notes">0</td>
+        </tr>
+        <tr>
+            <th>Note</th>
+            <td>₹2000</td>
+            <td>₹500</td>
+            <td>₹100</td>
+            <td>₹20</td>
+            <td>₹10</td>
+            <td>₹5</td>
+            <td>₹1</td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
