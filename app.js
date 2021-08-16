@@ -53,7 +53,7 @@ function changeCalculater(change){
     }
     resMsg(`₹${change} is to be returned.`)
     var monArr= Object.keys(money).reverse();
-    resultTable.style.display="block";
+    resultTable.style.display="flex";
     for (i=0;i<monArr.length;i++){
         if(change>=monArr[i]){
             var mult=Math.floor(change/monArr[i])
